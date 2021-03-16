@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
+
+$primary-clr1: #faf3e0;
+$primary-clr2: #b68973;
+$primary-clr3: #1e212d;
+$primary-white: #fff;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $primary-clr1;
+  color: $primary-clr3;
+  font-family: 'Comfortaa', cursive;
+}
+.container {
+  padding: 3rem 1rem;
+}
+
+.list {
+  height: 100vh;
+  text-align: center;
+
+  .list-center {
+    min-width: 20rem;
+    max-width: 35rem;
+    margin: 3rem auto;
+
+    h1 {
+      margin-bottom: 2rem;
+      font-size: 2.5rem;
+    }
+  }
+
+  .form-center {
+    display: grid;
+    grid-template-columns: 1fr 4rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    width: 100%;
+    background: $primary-white;
+    padding: 0.5rem;
+
+    input {
+      height: 2rem;
+      border: none;
+      padding: 0 0.5rem;
+      font-size: 1rem;
+      font-weight: bold;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    button {
+      padding: 0.5rem 1rem;
+      margin-left: 1rem;
+      border: none;
+      background: $primary-clr2;
+      cursor: pointer;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:hover {
+        background: $primary-clr1;
+      }
+    }
+  }
+}
+
+.task {
+  .task-col {
+    background: $primary-clr2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem auto;
+    font-weight: bold;
+    font-size: 1.3rem;
+
+    .task-done {
+      text-decoration: line-through;
+      text-decoration-thickness: 3px;
+    }
+
+    i {
+      padding: 0.1rem 0.3rem;
+      cursor: pointer;
+    }
+
+    .icon-done,
+    .icon-edit,
+    .icon-delete {
+      &:hover {
+        color: $primary-clr1;
+      }
+    }
+  }
+}
