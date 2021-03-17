@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
 
-$primary-clr1: #faf3e0;
-$primary-clr2: #b68973;
+$primary-clr1: #383e56;
+$primary-clr2: #709fb0;
 $primary-clr3: #1e212d;
 $primary-white: #fff;
 
@@ -13,7 +13,7 @@ $primary-white: #fff;
 
 body {
   background-color: $primary-clr1;
-  color: $primary-clr3;
+  color: $primary-white;
   font-family: 'Comfortaa', cursive;
 }
 .container {
@@ -69,6 +69,7 @@ body {
 
       &:hover {
         background: $primary-clr1;
+        color: $primary-white;
       }
     }
   }
